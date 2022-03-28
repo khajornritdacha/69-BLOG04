@@ -1,4 +1,4 @@
-# 69-BLOG04
+# Ny Demo Blog
 Demo blog
 
 Admin of blog is user with "id = 1"

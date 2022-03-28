@@ -3,6 +3,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=flask
 
 Starting+Files+-+blog-with-users-start.zip
+cred.py
 
 ### Flask ###
 instance/*

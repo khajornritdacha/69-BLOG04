@@ -4,6 +4,7 @@
 
 Starting+Files+-+blog-with-users-start.zip
 cred.py
+blog.db
 
 ### Flask ###
 instance/*

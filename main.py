@@ -1,5 +1,4 @@
 from functools import wraps
-from textwrap import wrap
 from flask import Flask, render_template, redirect, session, url_for, flash, abort
 from flask_bootstrap import Bootstrap
 from flask_ckeditor import CKEditor
@@ -13,6 +12,7 @@ from flask_gravatar import Gravatar
 import os
 
 
+##Initialize Flask
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("FLASK_SECRET_KEY", "ThisIsSecret")
 ckeditor = CKEditor(app)
@@ -151,8 +151,6 @@ def logout():
 def show_post(post_id):
     form = CommentForm()
     requested_post = BlogPost.query.get(post_id)
-    print(requested_post.comments[0].text)
-
     if form.validate_on_submit():
         comment = form.data["comment"]
         try:
